@@ -1,0 +1,113 @@
+/* Global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.kanban-container {
+  padding: 20px;
+  background-color: #f0f4f7; /* You can change this if the container also has a grey bg */
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.kanban-board {
+  display: flex;
+  gap: 20px;
+}
+
+.kanban-column {
+  padding: 15px;
+  border-radius: 8px;
+  min-width: 300px;
+}
+
+/* Ensure all cards have the same height */
+.ticket-card {
+  background-color: white; /* Removes grey background */
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  height: 120px; /* Fixed height */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; /* For positioning the image */
+  padding: 10px 15px;
+  text-align: left;
+  width: 100%; /* Adjust width if necessary */
+  max-width: 400px; /* Ensure the width is consistent */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Heading and text styles */
+.ticket-card h3 {
+  font-size: 16px;
+  margin: 0;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.ticket-card p {
+  font-size: 13px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Circular avatar at the top-right */
+.ticket-card img {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Category type and status below the title */
+.ticket-card .status {
+  font-size: 12px;
+  color: #888;
+  background-color: #f0f0f0;
+  padding: 3px 8px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+/* Ellipsis button for more options */
+.ticket-card .ellipsis {
+  font-size: 18px;
+  color: #888;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.btn {
+  padding: 8px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 0;
+}
